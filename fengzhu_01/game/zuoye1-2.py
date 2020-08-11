@@ -5,7 +5,7 @@
 #fight_zms方法（天山折梅手），调用天山折梅手方法会将自己的武力值提升10倍，血量缩减2倍。需要传入敌人的hp，power，进行一回合制对打，打完之后，比较双方血量。血多的一方获胜。
 #定义一个XuZhu类，继承于童姥。虚竹宅心仁厚不想打架。所以虚竹只有一个read（念经）的方法。每次调用都会打印“罪过罪过”
 #加入模块化改造
-
+import  os
 #定义天山童姥类
 class TongLao:
     #初始化参数 blood 血量  force武力值
@@ -48,6 +48,8 @@ class Xuzhu(TongLao):
         def read(self):
             print("罪过罪过")
 
+
+print(os.getcwd())
 
 tianshantonglao = TongLao(10000,200)
 tianshantonglao.see_people("WYZ")
