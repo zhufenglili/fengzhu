@@ -18,7 +18,7 @@ def test_1(login):
     print('测试用例')
     print(f"name 和passwd 是{login}")
 
-
+@pytest.mark.run(order)
 def test_2():
     print('测试用例')
 

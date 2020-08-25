@@ -1,8 +1,10 @@
+import pytest
 
 
+class test_1:
+    def test_1(self):
+        print('我是一')
 
-# 用例之前执行
-
-
-def test_2(con): #直接调用fixture
-    print('测试用例')
+    @pytest.mark.run(order=1)
+    def test_2(self):
+        print("我是二")
