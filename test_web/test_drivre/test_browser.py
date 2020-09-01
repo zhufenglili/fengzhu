@@ -43,8 +43,8 @@ class Test_l:
         # f.close()
 
     def test_clent(self):
-        # self.driver.find_element_by_link_text('添加成员').click()
-          self.driver.find_element_by_link_text('导入通讯录').click()
+        # _by_link_text('添加成员').click()
+          _by_link_text('导入通讯录').click()
         #上传文件
           self.driver.find_element_by_id("js_upload_file_input").send_keys('D:\ll.xls')
         # 获取文件的文本属性,与文件名称进行断言

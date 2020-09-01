@@ -35,5 +35,5 @@ class Testl:
         sleep(3)
     def  test_login(self):
         sleep(10)
-        self.driver.find_element(By.CSS_SELECTOR,".index_service_cnt_itemWrap:nth-child(2)").click()
+        (By.CSS_SELECTOR,".index_service_cnt_itemWrap:nth-child(2)").click()
         sleep(3)
